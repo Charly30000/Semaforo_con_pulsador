@@ -39,6 +39,14 @@
       "top": -70.6,
       "left": 403.2,
       "attrs": { "color": "blue" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 52.8,
+      "left": 335.45,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
     }
   ],
   "connections": [
@@ -53,7 +61,9 @@
     [ "led4:C", "uno:GND.1", "black", [ "v115.2", "h-163.1" ] ],
     [ "led5:C", "uno:GND.1", "black", [ "v115.2", "h-201.5" ] ],
     [ "btn1:1.l", "uno:6", "blue", [ "h0" ] ],
-    [ "btn1:2.r", "uno:GND.3", "black", [ "v326.6", "h-291.8" ] ]
+    [ "btn1:2.r", "uno:GND.3", "black", [ "v326.6", "h-291.8" ] ],
+    [ "uno:5V", "r1:2", "violet", [ "v28.7", "h205.4" ] ],
+    [ "r1:1", "btn1:1.l", "gray", [ "v-86.4", "h38.4" ] ]
   ],
   "dependencies": {}
 }
